@@ -3,8 +3,6 @@ import './style.css';
 import Search from '../search';
 
 const h_reducer = (prev, curr) => [prev, curr];
-const h_td_mapper = (x, i) => <td key={i}>{x}</td>;
-const h_create_key = (prefix, key) => prefix + key;
 
 const setHeaders = ob => {
     return Object.keys(ob)?.map(
@@ -15,7 +13,7 @@ const setHeaders = ob => {
 const setContent = ob => {
     if (ob.length === 0) return <></>;
     return ob.map(
-        (x, i) => <tr key={h_create_key('tr_k_', i)}>{Object.values(x)?.map(h_td_mapper)?.reduce(h_reducer)}</tr>
+        (x, i) => <tr key={'tr_k_'+ i}>{Object.values(x)?.map((x, i) => <td key={i}>{x}</td>)?.reduce(h_reducer)}</tr>
     )?.reduce(h_reducer);
 };
 

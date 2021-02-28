@@ -14,5 +14,13 @@ export const tasks = [
         type: 'task',
         description: 'Some cool task 2',
         active: 0
+    },
+    {
+        id: 3,
+        title: 'Another one',
+        region: 'EMEA',
+        type: 'task',
+        description: 'Another one',
+        active: 1
     }
 ];
