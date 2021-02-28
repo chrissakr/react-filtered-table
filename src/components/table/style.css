@@ -1,0 +1,13 @@
+.table_component {
+    width: 100%;
+}
+
+.table_component th {
+    font-weight: bold;
+    border: solid 1px #fff;
+    background: #ddd;
+}
+
+.table_component td {
+    border: solid 1px #ddd;
+}

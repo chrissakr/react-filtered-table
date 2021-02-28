@@ -1,0 +1,12 @@
+.table_search {
+    margin: 10px;
+    padding: 30px;
+    border: solid 3px #bbb;
+    background: #eee;
+    border-radius: 10px;
+}
+
+.table_search input, .table_search select {
+    width: 100%;
+    padding: 5px;
+}
